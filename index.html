@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para my baby</title>
+    <style>
+        /* --- ESTILOS GENERALES --- */
+        body {
+            background-color: #f5f0f3;
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* --- TARJETA CONTENEDORA PRINCIPAL --- */
+        .card {
+            background-color: #f3d3e4;
+            width: 100%;
+            max-width: 450px;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+        }
+
+        /* --- SECCIÓN 1: PORTADA --- */
+        .date {
+            font-size: 3.2rem;
+            color: #821010;
+            margin-bottom: 35px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .legend-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4a4a4a;
+            margin: 30px 10px;
+            font-style: italic;
+        }
+
+        /* --- ENLACES / BOTONES ESTILO TEXTO --- */
+        .action-link {
+            background-color: #f3d3e4;
+            border: 2px dashed #b83b3b;
+            border-radius: 15px;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #b83b3b;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(224, 82, 157, 0.15);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .action-link:hover {
+            color: #e05252;
+        }
+
+        /* --- CONTROL DE SECCIONES (OCULTAS POR DEFECTO) --- */
+        .carta-section {
+            display: none; /* CORRECCIÓN: Oculta la carta al principio */
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .videos-section {
+            display: none; /* Oculta los videos al principio */
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .video-wrapper {
+            margin-bottom: 20px;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            display: block;
+        }
+
+        .video-title {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .img1 {
+            height: 280px;
+            width: 330px;
+            border-radius: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div id="seccionPortada">
+            <div class="date">13/07/2026</div>
+            <div>
+                <img src="c:\Users\HP 840 G6\Downloads\444.jpeg" class="img1" alt="">
+            </div>
+            <div class="legend-text">
+                <p>
+                    Dicen que las las almas destinadas a estar juntas se encuentran de una forma misteriosa. para
+                    nosotros ese lugar especial.Fue la iglesia y de una manera tan hermosa he inexplicable Dios decidió
+                    unir nuestra vidas de alguna manera. El sabía que nuestra relación debía nacer bajo su bendición,
+                    dándome el gran privilegio de poder ser tu novio. Me alegro que el destino escrito por Dios, Me  
+                    llevo a algo tan lindo<br>✨
+                </p>
+            </div>
+            <button class="action-link" onclick="irACarta()">Despliega con el Corazón<br>🧡</button>
+        </div>
+
+        <div id="seccionCarta" class="carta-section">
+            <p class="legend-text">
+                Felices 5 Meses mi amor 🥺✨<br><br> Hoy para mí es un día súper increíble y alegre ya que por gracia de Dios hoy cumplo 5 meses de estar con mi persona favorita, con la chica más bella y hermosa q mis ojos pueden y podrán ver , ante mis ojos es una niña perfecta, quiero pedirte disculpas si te he echo enojar o he actuado de forma incorrecta perdóname mi amor , pero quiero recordarte una vez más que TE AMOO ,TE AMOO CON TODO MI CORAZÓN, y si Dios lo permite vamos a seguir cumpliendo muchísimos más meses , incluso años mi amor ,si juntamos nuestras fuerzas siempre orando a Dios podremos formar algo bonito y algo especial para los dos bebesita hermosa, Eres mi mayor tesoro ,Mi osita preciosa,Mi niña bonita,Mi cielo,Mi Reina ,Mi Princesa,Mi luna ,Mi sol,Mis estrellas ,Eres todo para mí , Te amoo baby 🧡✨
+            </p>
+            <button class="action-link" onclick="irAVideos()">Quiero mostrarte algo mas🥺🫶</button>
+        </div>
+
+        <div id="seccionVideos" class="videos-section">
+            <div class="video-title">✨mi niña bella✨</div>
+            <div class="video-wrapper">
+                <video controls preload="metadata">
+                    <source src="c:\Users\HP 840 G6\Downloads\mili123.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+
+            <div class="video-title">En mis ojos siempre🥺</div>
+            <div class="video-wrapper">
+                <video controls preload="metadata">
+                    <source src="c:\Users\HP 840 G6\Downloads\mili2.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+
+            <div class="video-title">Una vida junto a ti 🌹</div>
+            <div class="video-wrapper">
+                <video controls preload="metadata">
+                    <source src="c:\Users\HP 840 G6\Downloads\mili3.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+
+            <button class="action-link" onclick="irAPortada()" style="margin-top: 15px;">Volver al inicio</button>
+        </div>
+
+    </div>
+
+    <script>
+        var portada = document.getElementById("seccionPortada");
+        var carta = document.getElementById("seccionCarta");
+        var videos = document.getElementById("seccionVideos");
+
+        function irACarta() {
+            portada.style.display = "none";
+            carta.style.display = "block";  // Muestra la carta
+            videos.style.display = "none";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function irAVideos() {
+            portada.style.display = "none";
+            carta.style.display = "none";   // CORREGIDO: "none" en vez de "nome"
+            videos.style.display = "block";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            activarAutoReproduccionConSonido();
+        }
+
+        function irAPortada() {
+            var todosLosVideos = document.querySelectorAll('.video-wrapper video');
+            todosLosVideos.forEach(function (video) {
+                video.pause();
+            });
+
+            portada.style.display = "block";
+            carta.style.display = "none";   // Asegura que la carta se oculte al volver al inicio
+            videos.style.display = "none";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function activarAutoReproduccionConSonido() {
+            var videosParaObservar = document.querySelectorAll('.video-wrapper video');
+            var opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.6
+            };
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    var video = entry.target;
+                    if (entry.isIntersecting) {
+                        videosParaObservar.forEach(function (v) {
+                            if (v !== video) v.pause();
+                        });
+                        video.muted = false;
+                        video.play().catch(function (error) {
+                            video.muted = true;
+                            video.play();
+                        });
+                    } else {
+                        video.pause();
+                    }
+                });
+            }, opciones);
+
+            videosParaObservar.forEach(function (video) {
+                observer.observe(video);
+            });
+        }
+    </script>
+</body>
+</html>
